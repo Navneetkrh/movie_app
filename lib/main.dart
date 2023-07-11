@@ -4,6 +4,7 @@ import 'package:flutter/rendering.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'functions.dart';
+import 'details.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:dots_indicator/dots_indicator.dart';
 
@@ -110,6 +111,13 @@ class _MyHomePageState extends State<MyHomePage> {
                         return GestureDetector(
                           onTap: () {
                             // Handle movie tap
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) =>
+                                    MovieDetailsPage(movie: movie),
+                              ),
+                            );
                           },
                           child: Container(
                             margin: const EdgeInsets.symmetric(
@@ -230,15 +238,27 @@ class _MyHomePageState extends State<MyHomePage> {
                               
                               // Popularmovies.removeWhere((item) => Popularmovies[index]['poster_path'] == null); // I am not including the movies which don't have a valid poster url
                               final Popularmovie=Popularmovies[index];
-                              return Container(
-                                margin: EdgeInsets.all(8.0),
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  child: Image.network(
-                                    'https://image.tmdb.org/t/p/w500${Popularmovie['poster_path']}',
-                                    fit: BoxFit.cover,
-                                    width: 120.0,
-                                    height: 180.0,
+                              return GestureDetector(
+                                onTap: () {
+                                  // Handle movie tap
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          MovieDetailsPage(movie: Popularmovie),
+                                    ),
+                                  );
+                                },
+                                child: Container(
+                                  margin: EdgeInsets.all(8.0),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    child: Image.network(
+                                      'https://image.tmdb.org/t/p/w500${Popularmovie['poster_path']}',
+                                      fit: BoxFit.cover,
+                                      width: 120.0,
+                                      height: 180.0,
+                                    ),
                                   ),
                                 ),
                               );
@@ -298,16 +318,28 @@ class _MyHomePageState extends State<MyHomePage> {
                               
                               // Popularmovies.removeWhere((item) => Popularmovies[index]['poster_path'] == null); // I am not including the movies which don't have a valid poster url
                               final Popularmovie=Popularmovies[index];
-                              return Container(
-                                margin: EdgeInsets.all(8.0),
-                                
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  child: Image.network(
-                                    'https://image.tmdb.org/t/p/w500${Popularmovie['poster_path']}',
-                                    fit: BoxFit.cover,
-                                    width: 120.0,
-                                    height: 180.0,
+                              return GestureDetector(
+                                onTap: () {
+                                  // Handle movie tap
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          MovieDetailsPage(movie: Popularmovie),
+                                    ),
+                                  );
+                                },
+                                child: Container(
+                                  margin: EdgeInsets.all(8.0),
+                                  
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    child: Image.network(
+                                      'https://image.tmdb.org/t/p/w500${Popularmovie['poster_path']}',
+                                      fit: BoxFit.cover,
+                                      width: 120.0,
+                                      height: 180.0,
+                                    ),
                                   ),
                                 ),
                               );
