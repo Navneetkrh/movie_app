@@ -39,9 +39,10 @@ after removing
 ![less movies](screenshots/11.jpg)
 
 
-## Getting Started
+## Download
 
 To get started with Movie App, download the apk
+https://drive.google.com/file/d/1EqFX9TG9fKHTfaucEPyoYUvpSEkFlm3e/view?usp=sharing
 
 ## Dependencies
 
