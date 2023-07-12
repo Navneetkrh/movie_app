@@ -12,31 +12,31 @@ I have used flutter to build this app and The movies database api for data.
 
 
 ## How to (with screenshots)
-![homepage](screenshots/1.png)   ![homepage2](screenshots/2.png)
+![homepage](screenshots/1.jpg)   ![homepage2](screenshots/2.png)
 home page contains a movie corousal of trending now movies,the horizontally scrollable list of 
 popular and upcoming movies.
 
-![toprated](screenshots/3.png)
+![toprated](screenshots/3.jpg)
 on clicking on top rated on bottom navigation bar ,it will take to this screen of top rated movies,
 
-![search](screenshots/4.png)
+![search](screenshots/4.jpg)
 on clicking the search icon in the appbar of home screen
-![search 2](screenshots/5.png)
+![search 2](screenshots/5.jpg)
 on entering movie name it fetches output.
 
-![details page](screenshots/6.png) ![details2](screenshots/Screenshot_1689153363.png)
+![details page](screenshots/6.jpg) ![details2](screenshots/Screenshot_1689153363.jpg)
 on clicking any movie from any page,will open the details page which contains the details about a movie
 and a favourite button to set movie as favourite
  
  on cliking favourite button a notification appears bottom
-![favourite](screenshots/7.png) ![unfavourite](screenshots/8.png)
+![favourite](screenshots/7.jpg) ![unfavourite](screenshots/8.jpg)
 
 the favourite movies can be opened from homepage->favourite
-![favourite list](screenshots/9.png)
+![favourite list](screenshots/9.jpg)
 a movie can be removed also
-![remove](screenshots/10.png)
+![remove](screenshots/10.jpg)
 after removing
-![less movies](screenshots/11.png)
+![less movies](screenshots/11.jpg)
 
 
 ## Getting Started
