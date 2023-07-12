@@ -117,52 +117,52 @@ class _topratedState extends State<toprated> {
             return Center(child: CircularProgressIndicator());
           }),
 
-          bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _selectedIndex,
-        onTap: _onItemTapped,
-        selectedItemColor: Colors.blue,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.star),
-            label: 'Top Rated',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.favorite),
-            label: 'Favorites',
-          ),
-        ],
-      ),
+      //     bottomNavigationBar: BottomNavigationBar(
+      //   currentIndex: _selectedIndex,
+      //   onTap: _onItemTapped,
+      //   selectedItemColor: Colors.blue,
+      //   items: [
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.home),
+      //       label: 'Home',
+      //     ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.star),
+      //       label: 'Top Rated',
+      //     ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.favorite),
+      //       label: 'Favorites',
+      //     ),
+      //   ],
+      // ),
     );
   }
-  void _onItemTapped(int value) {
-    setState(() {
-      _selectedIndex = value;
-    });
+  // void _onItemTapped(int value) {
+  //   setState(() {
+  //     _selectedIndex = value;
+  //   });
     
-    // if (value == 1) {
-    //   //  Navigator.push(
-    //   //           context,
-    //   //           MaterialPageRoute(
-    //   //             builder: (context) => const movieSearcher(),
-    //   //           ),
-    //   Navigator.push(
-    //       context,
-    //       MaterialPageRoute(
-    //         builder: (context) => const toprated(),
-    //       ));
-    // }
-     if(value == 0){
-            Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => const MyHomePage(),
-          ));
-    }
-  }
+  //   // if (value == 1) {
+  //   //   //  Navigator.push(
+  //   //   //           context,
+  //   //   //           MaterialPageRoute(
+  //   //   //             builder: (context) => const movieSearcher(),
+  //   //   //           ),
+  //   //   Navigator.push(
+  //   //       context,
+  //   //       MaterialPageRoute(
+  //   //         builder: (context) => const toprated(),
+  //   //       ));
+  //   // }
+  //    if(value == 0){
+  //           Navigator.push(
+  //         context,
+  //         MaterialPageRoute(
+  //           builder: (context) => const MyHomePage(),
+  //         ));
+  //   }
+  // }
 
 }
 

@@ -72,11 +72,13 @@ class _MovieDetailsPageState extends State<MovieDetailsPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(height: 8.0),
+                SizedBox(height: 1.0),
                 Hero(
                   tag: widget.movie['id'],
+                  
                   child: Container(
-                    height: 300.0,
+                    
+                    height: 350.0,
                     width: double.infinity,
                     decoration: BoxDecoration(
                       image: DecorationImage(
@@ -84,7 +86,9 @@ class _MovieDetailsPageState extends State<MovieDetailsPage> {
                           'https://image.tmdb.org/t/p/w500${widget.movie['poster_path']}',
                         ),
                         fit: BoxFit.cover,
+                        
                       ),
+                     
                     ),
                   ),
                 ),

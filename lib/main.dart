@@ -12,6 +12,7 @@ import 'search.dart';
 import 'topRated.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
+
 Future<void> main() async {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     statusBarColor: Colors.blue, // set notification shade color here
@@ -41,7 +42,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(),
+      home: MyHomePage(),
     );
   }
 }
@@ -55,17 +56,23 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  Future<List<dynamic>>? _popularMovies;
+  
   Future<List<dynamic>>? _PopularMovies;
   Future<List<dynamic>>? _trendingMovies;
+  Future<List<dynamic>>? _upcomingMovies;
   int _selectedIndex = 0;
 
   @override
   void initState() {
     super.initState();
+    
+    // navigate to splash screen
     _trendingMovies = fetchTrendingMovies();
     _PopularMovies = fetchPopularMovies();
-    _popularMovies = fetchPopularMovies();
+    _upcomingMovies = fetchUpcomingMovies();
+     
+   
+    
   }
 
   // bool islisted = false;
@@ -126,7 +133,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
             FutureBuilder<List<dynamic>>(
-              future: fetchTrendingMovies(),
+              future: _trendingMovies,
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
                   final movies = snapshot.data!;
@@ -262,7 +269,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
             FutureBuilder<List<dynamic>>(
-              future: fetchPopularMovies(),
+              future: _PopularMovies,
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
                   final Popularmovies = snapshot.data!;
@@ -332,7 +339,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
             FutureBuilder<List<dynamic>>(
-              future: fetchUpcomingMovies(),
+              future: _upcomingMovies,
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
                   final Popularmovies = snapshot.data!;
@@ -412,9 +419,9 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void _onItemTapped(int value) {
-    setState(() {
-      _selectedIndex = value;
-    });
+    // setState(() {
+    //   _selectedIndex = value;
+    // });
 
     if (value == 1) {
       //  Navigator.push(
