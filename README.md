@@ -12,7 +12,7 @@ I have used flutter to build this app and The movies database api for data.
 
 
 ## How to (with screenshots)
-![homepage](screenshots/1.jpg)   ![homepage2](screenshots/2.png)
+![homepage](screenshots/1.jpg)   ![homepage2](screenshots/2.jpg)
 home page contains a movie corousal of trending now movies,the horizontally scrollable list of 
 popular and upcoming movies.
 
