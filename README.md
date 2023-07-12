@@ -1,6 +1,7 @@
 # Movie App
 
 Movie App is a mobile app that allows users to browse and search for movies, view movie details, and save their favorite movies to a watchlist.
+I have used flutter to build this app and The movies database api for data.
 
 ## Features
 
@@ -10,7 +11,7 @@ Movie App is a mobile app that allows users to browse and search for movies, vie
 - Mark movies as favourite
 
 
-## How to
+## How to (with screenshots)
 ![homepage](screenshots/1.png)   ![homepage2](screenshots/2.png)
 home page contains a movie corousal of trending now movies,the horizontally scrollable list of 
 popular and upcoming movies.
@@ -40,8 +41,7 @@ after removing
 
 ## Getting Started
 
-To get started with Movie App, follow these steps:
-1.download this
+To get started with Movie App, download the apk
 
 ## Dependencies
 
